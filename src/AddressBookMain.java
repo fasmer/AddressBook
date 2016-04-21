@@ -15,7 +15,6 @@ public class AddressBookMain {
     public static void main(String[] args) {
 
         System.out.println("Welcome to the address book program!");
-        testBook();
 
         while (true) {
             System.out.println("\nWhat would you like to do?");
@@ -96,20 +95,6 @@ public class AddressBookMain {
                     "\nPhone Number: " + contact.phoneNumber);
 
         }
-    }
-
-    public static void testBook(){
-        ContactInformation contactSteve = new ContactInformation(firstName, lastName, phoneNumber);
-        contactSteve.setFirstName("Steve");
-        contactSteve.setLastName("Farmer");
-        contactSteve.setPhoneNumber("214-226-5253");
-        information.add(contactSteve);
-
-        ContactInformation contactBen = new ContactInformation(firstName, lastName, phoneNumber);
-        contactBen.setFirstName("Ben");
-        contactBen.setLastName("Farmer");
-        contactBen.setPhoneNumber("214-226-5242");
-        information.add(contactBen);
     }
 
 
